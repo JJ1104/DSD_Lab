@@ -1,0 +1,73 @@
+$date
+	Thu Sep 22 10:44:06 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module qb_tb $end
+$var wire 1 ! altb $end
+$var wire 1 " agtb $end
+$var wire 1 # aeqb $end
+$var reg 4 $ a [3:0] $end
+$var reg 4 % b [3:0] $end
+$scope module c1 $end
+$var wire 4 & a [3:0] $end
+$var wire 1 # aeqb $end
+$var wire 1 " agtb $end
+$var wire 1 ! altb $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 ( c6 $end
+$var wire 1 ) c5 $end
+$var wire 1 * c4 $end
+$var wire 1 + c3 $end
+$var wire 1 , c2 $end
+$var wire 1 - c1 $end
+$scope module stage0 $end
+$var wire 2 . a [1:0] $end
+$var wire 1 - aeqb $end
+$var wire 1 , agtb $end
+$var wire 1 + altb $end
+$var wire 2 / b [1:0] $end
+$upscope $end
+$scope module stage1 $end
+$var wire 2 0 a [1:0] $end
+$var wire 1 * aeqb $end
+$var wire 1 ) agtb $end
+$var wire 1 ( altb $end
+$var wire 2 1 b [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 1
+b0 0
+b1 /
+b0 .
+0-
+0,
+1+
+1*
+0)
+0(
+b1 '
+b0 &
+b1 %
+b0 $
+0#
+0"
+1!
+$end
+#20
+0!
+0+
+1#
+1-
+b1 .
+b1 $
+b1 &
+#40

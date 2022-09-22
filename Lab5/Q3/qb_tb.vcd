@@ -1,0 +1,31 @@
+$date
+	Thu Sep 22 10:27:02 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module qb_tb $end
+$var wire 4 ! bcd [3:0] $end
+$var reg 4 " in [3:0] $end
+$scope module b1 $end
+$var wire 4 # in [3:0] $end
+$var wire 4 $ bcd [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 $
+b111 #
+b111 "
+b1 !
+$end
+#20
+b10 !
+b10 $
+b110 "
+b110 #
+#40
