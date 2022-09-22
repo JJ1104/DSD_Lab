@@ -8,9 +8,7 @@ module mul2bit(x,y,p);
 	and(a[0],x[0],y[1]);
 	and(a[1],x[1],y[1]);
 	assign b[1] = 1'b0;
-	adder2 stage0(a,b,1'b0,p[2:1],p[3]);
-	//adder2 stage1(a,1'b0,c2,p[2],p[3]);
-	
+	adder2 stage0(a,b,1'b0,p[2:1],p[3]);	
 endmodule
 
 module adder2(x,y,cin,s,cout);
