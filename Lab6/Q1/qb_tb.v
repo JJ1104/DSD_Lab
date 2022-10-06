@@ -12,10 +12,11 @@ begin
 	$dumpfile("qb_tb.vcd");
 	$dumpvars(0,qb_tb);
 	
-	a = 4'b1110; s = 2'b00; #20;
-	a = 4'b1101; s = 2'b01; #20;
-	a = 4'b1011; s = 2'b10; #20;
-	a = 4'b0111; s = 2'b11; #20;
+	a = 4'b1010; 
+	s = 2'b00; #20;
+	s = 2'b01; #20;
+	s = 2'b10; #20;
+	s = 2'b11; #20;
 	
 	$display("Test Complete");
 end 
