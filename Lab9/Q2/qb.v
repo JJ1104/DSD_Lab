@@ -5,7 +5,7 @@ module func(a,f,g,h);
 	fourtosixteen s0(a,1'b1,z);
 	
 	assign f = z[11] | z[10] | z[7] | z[3] | z[14] | z[6];
-	assign g = z[14] | z[10] | z[1] | z[0];
+	assign g = z[14] | z[10] | z[3] | z[2];
 	assign h = z[1] | z[0] | z[15] | z[14] | z[7] | z[3];
 endmodule
 	

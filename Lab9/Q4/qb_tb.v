@@ -17,6 +17,10 @@ begin
 	s=3'd2; #20;
 	s=3'd3; #20;
 	s=3'd4; #20;
+	s=3'd5; #20;
+	s=3'd6; #20;
+	s=3'd7; #20;
+	
 	
 	$display("Test Complete");
 end 
