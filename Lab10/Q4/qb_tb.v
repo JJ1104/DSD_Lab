@@ -1,9 +1,10 @@
 `timescale 1ns/1ns
 `include "qb.v" 
 module qb_tb();
-reg j, k, clock, resetn; 
-wire q;
-JKFF j1(j, k , clock, resetn, q);
+reg [4:0] i;
+reg clock, resetn; 
+wire [4:0] o;
+reg5 r1(i,o,clock, resetn);
 initial
 begin
 	$dumpfile("qb_tb.vcd");
@@ -12,15 +13,15 @@ begin
 	forever #20 clock = ~clock;
 end
 initial begin
-	j=0; k=0; resetn=0;
+	i=5'b11000; resetn=0;
 	#20;
-	j=0; k=1; resetn=1;
+	i=5'b10100; resetn=1;
 	#20;
-	j=1; k=0; resetn=0;
+	i=5'b11010; resetn=0;
 	#20;
-	j=1; k=1; resetn=0;
+	i=5'b11001; resetn=0;
 	#20;
-	j=1; k=0; resetn=1;
+	i=5'b01010; resetn=1;
 	#20;
 	$display("Test complete");
 end
